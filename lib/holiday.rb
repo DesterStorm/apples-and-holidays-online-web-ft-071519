@@ -58,8 +58,14 @@ def add_supply_to_memorial_day(holiday_hash, supply)
       :memorial_day => ["BBQ"]
     }
   }
+  count = 0
+  if count < 1
   holiday_hash[:spring][:memorial_day] << "Grill"
-  holiday_hash[:spring][:memorial_day].delete("Tablecloth")
+  count += 1
+  elsif count < 2 
+  holiday_hash[:spring][:memorial_day] << "Tablecloth"
+  count += 1 
+  else holiday_hash[:spring][:memorial_day] << "Grill"
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
