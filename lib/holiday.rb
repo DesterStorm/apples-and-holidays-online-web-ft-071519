@@ -62,10 +62,8 @@ def add_supply_to_memorial_day(holiday_hash, supply)
   if count < 1
   holiday_hash[:spring][:memorial_day] << "Grill"
   count += 1
-  elsif count < 2 
+  else  
   holiday_hash[:spring][:memorial_day] << "Tablecloth"
-  count += 1 
-  else holiday_hash[:spring][:memorial_day] << "Grill"
 end
 end
 
