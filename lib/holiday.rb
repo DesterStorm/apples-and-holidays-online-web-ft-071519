@@ -101,8 +101,7 @@ def all_winter_holiday_supplies(holiday_hash)
       :memorial_day => ["BBQ"]
     }
   }
-  return holiday_hash[:winter][:christmas]
-  return holiday_hash[:winter][:new_years]
+  return holiday_hash[:winter].values.flatten
 end
 
 def all_supplies_in_holidays(holiday_hash)
