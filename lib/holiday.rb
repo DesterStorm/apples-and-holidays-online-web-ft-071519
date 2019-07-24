@@ -127,6 +127,7 @@ def all_supplies_in_holidays(holiday_hash)
       :memorial_day => ["BBQ"]
     }
   }
+  return holiday_hash.values.flatten
 end
 
 def all_holidays_with_bbq(holiday_hash)
