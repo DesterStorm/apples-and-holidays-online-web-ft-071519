@@ -58,12 +58,8 @@ def add_supply_to_memorial_day(holiday_hash, supply)
       :memorial_day => ["BBQ"]
     }
   }
-  count = 0
-  if count < 1
-  holiday_hash[:spring][:memorial_day] << "Grill"
-  count += 1
-  else  
-  holiday_hash[:spring][:memorial_day] << "Tablecloth"
+  
+  holiday_hash[:spring][:memorial_day] << supply
 end
 end
 
