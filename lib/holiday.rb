@@ -127,7 +127,8 @@ def all_supplies_in_holidays(holiday_hash)
       :memorial_day => ["BBQ"]
     }
   }
-  return holiday_hash.each.
+  return holiday_hash.each do |season, holiday|
+    
   
 end
 
